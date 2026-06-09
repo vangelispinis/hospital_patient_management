@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#922;&#945;&#964;&#945;&#947;&#961;&#945;&#966;&#942; &#913;&#963;&#952;&#949;&#957;&#974;&#957; &#925;&#959;&#963;&#959;&#954;&#959;&#956;&#949;&#943;&#959;&#965;</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">&#925;&#959;&#963;&#959;&#954;&#959;&#956;&#949;&#953;&#945;&#954;&#972; &#963;&#973;&#963;&#964;&#951;&#956;&#945;</p>
+                <h1>&#922;&#945;&#964;&#945;&#947;&#961;&#945;&#966;&#942; &#913;&#963;&#952;&#949;&#957;&#942;</h1>
+            </div>
+            <a class="button secondary" href="patient_list.html">&#923;&#943;&#963;&#964;&#945; &#945;&#963;&#952;&#949;&#957;&#974;&#957;</a>
+        </header>
+
+        <form class="patient-form" action="save_patient.php" method="post">
+            <section class="form-section">
+                <h2>&#928;&#961;&#959;&#963;&#969;&#960;&#953;&#954;&#940; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945;</h2>
+                <div class="grid">
+                    <label>
+                        &#908;&#957;&#959;&#956;&#945;
+                        <input type="text" name="first_name" maxlength="50" required>
+                    </label>
+
+                    <label>
+                        &#917;&#960;&#974;&#957;&#965;&#956;&#959;
+                        <input type="text" name="last_name" maxlength="50" required>
+                    </label>
+
+                    <label>
+                        &#913;&#924;&#922;&#913;
+                        <input type="text" name="amka" maxlength="11" pattern="[0-9]{11}" required>
+                    </label>
+
+                    <label>
+                        &#919;&#956;&#949;&#961;&#959;&#956;&#951;&#957;&#943;&#945; &#947;&#941;&#957;&#957;&#951;&#963;&#951;&#962;
+                        <input type="date" name="birth_date" required>
+                    </label>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>&#921;&#945;&#964;&#961;&#953;&#954;&#940; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;</h2>
+                <div class="grid">
+                    <label>
+                        &#910;&#968;&#959;&#962; &#963;&#949; cm
+                        <input type="number" name="height" min="30" max="260" step="0.01" required>
+                    </label>
+
+                    <label>
+                        &#914;&#940;&#961;&#959;&#962; &#963;&#949; kg
+                        <input type="number" name="weight" min="1" max="500" step="0.01" required>
+                    </label>
+
+                    <label>
+                        &#919;&#956;&#949;&#961;&#959;&#956;&#951;&#957;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;
+                        <input type="date" name="admission_date" required>
+                    </label>
+                </div>
+
+                <label>
+                    &#913;&#953;&#964;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;
+                    <textarea name="reason" rows="5" required></textarea>
+                </label>
+            </section>
+
+            <div class="actions">
+                <button class="button" type="submit">&#913;&#960;&#959;&#952;&#942;&#954;&#949;&#965;&#963;&#951; &#945;&#963;&#952;&#949;&#957;&#942;</button>
+                <button class="button secondary" type="reset">&#922;&#945;&#952;&#945;&#961;&#953;&#963;&#956;&#972;&#962;</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

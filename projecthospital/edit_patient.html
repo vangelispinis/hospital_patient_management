@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#917;&#960;&#949;&#958;&#949;&#961;&#947;&#945;&#963;&#943;&#945; &#913;&#963;&#952;&#949;&#957;&#942;</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">&#925;&#959;&#963;&#959;&#954;&#959;&#956;&#949;&#953;&#945;&#954;&#972; &#963;&#973;&#963;&#964;&#951;&#956;&#945;</p>
+                <h1>&#917;&#960;&#949;&#958;&#949;&#961;&#947;&#945;&#963;&#943;&#945; &#913;&#963;&#952;&#949;&#957;&#942;</h1>
+            </div>
+            <a class="button secondary" href="patient_list.html">&#928;&#943;&#963;&#969; &#963;&#964;&#951; &#955;&#943;&#963;&#964;&#945;</a>
+        </header>
+
+        <form class="patient-form" action="update_patient.php" method="post">
+            <input type="hidden" name="id" value="1">
+
+            <section class="form-section">
+                <h2>&#928;&#961;&#959;&#963;&#969;&#960;&#953;&#954;&#940; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945;</h2>
+                <div class="grid">
+                    <label>
+                        &#908;&#957;&#959;&#956;&#945;
+                        <input type="text" name="first_name" maxlength="50" value="&#915;&#953;&#974;&#961;&#947;&#959;&#962;" required>
+                    </label>
+
+                    <label>
+                        &#917;&#960;&#974;&#957;&#965;&#956;&#959;
+                        <input type="text" name="last_name" maxlength="50" value="&#928;&#945;&#960;&#945;&#948;&#972;&#960;&#959;&#965;&#955;&#959;&#962;" required>
+                    </label>
+
+                    <label>
+                        &#913;&#924;&#922;&#913;
+                        <input type="text" name="amka" maxlength="11" pattern="[0-9]{11}" value="12345678901" required>
+                    </label>
+
+                    <label>
+                        &#919;&#956;&#949;&#961;&#959;&#956;&#951;&#957;&#943;&#945; &#947;&#941;&#957;&#957;&#951;&#963;&#951;&#962;
+                        <input type="date" name="birth_date" value="1990-04-12" required>
+                    </label>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>&#921;&#945;&#964;&#961;&#953;&#954;&#940; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;</h2>
+                <div class="grid">
+                    <label>
+                        &#910;&#968;&#959;&#962; &#963;&#949; cm
+                        <input type="number" name="height" min="30" max="260" step="0.01" value="178.00" required>
+                    </label>
+
+                    <label>
+                        &#914;&#940;&#961;&#959;&#962; &#963;&#949; kg
+                        <input type="number" name="weight" min="1" max="500" step="0.01" value="82.00" required>
+                    </label>
+
+                    <label>
+                        &#919;&#956;&#949;&#961;&#959;&#956;&#951;&#957;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;
+                        <input type="date" name="admission_date" value="2026-05-20" required>
+                    </label>
+                </div>
+
+                <label>
+                    &#913;&#953;&#964;&#943;&#945; &#949;&#953;&#963;&#945;&#947;&#969;&#947;&#942;&#962;
+                    <textarea name="reason" rows="5" required>&#928;&#965;&#961;&#949;&#964;&#972;&#962; &#954;&#945;&#953; &#941;&#957;&#964;&#959;&#957;&#951; &#945;&#948;&#965;&#957;&#945;&#956;&#943;&#945;</textarea>
+                </label>
+            </section>
+
+            <div class="actions">
+                <button class="button" type="submit">&#913;&#960;&#959;&#952;&#942;&#954;&#949;&#965;&#963;&#951; &#945;&#955;&#955;&#945;&#947;&#974;&#957;</button>
+                <a class="button secondary" href="patient_list.html">&#913;&#954;&#973;&#961;&#969;&#963;&#951;</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+
