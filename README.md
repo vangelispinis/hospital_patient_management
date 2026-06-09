@@ -78,7 +78,8 @@ C:\xampp\php\php.exe -S 127.0.0.1:8000 -t .
 Μετά ανοίξτε στον browser:
 
 ```text
-http://127.0.0.1:8000/index.php
+[http://localhost/projecthospital/index.php
+]
 ```
 
 ## Στοιχεία σύνδεσης
